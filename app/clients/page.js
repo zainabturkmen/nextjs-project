@@ -17,7 +17,7 @@ const ClientPage = () => {
         className="btn btn-primary mt-4 ml-8"
         onClick={() => setCount(count - 1)}
       >
-        Decrease
+        Decrease 
       </button>
     </div>
   );
