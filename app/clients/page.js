@@ -12,7 +12,7 @@ const ClientPage = () => {
         onClick={() => setCount(count + 1)}
       >
         Increase
-      </button>
+      </button>  
       <button
         className="btn btn-primary mt-4 ml-8"
         onClick={() => setCount(count - 1)}
