@@ -1,8 +1,12 @@
 import React from 'react'
 
-const drinksPage = () => {
+const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
+
+const drinksPage = async() => {
   return (
-    <div>drinksPage</div>
+    <div>
+      <h1 className="text-7xl">drinksPage</h1>
+    </div>
   )
 }
 
