@@ -1,6 +1,7 @@
 import Link from "next/link";
-
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
+import drinkImage from "./drink.jpg";
+console.log(drinkImage);
 
 const getSingleDrink = async (id) => {
   const res = await fetch(`${url}${id}`);
