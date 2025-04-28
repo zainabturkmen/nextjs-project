@@ -9,8 +9,8 @@ const getSingleDrink = async (id) => {
 };
 
 const SingleDrinksPage = async ({ params }) => {
-  const { id } = await params;
-  console.log(id);
+  const data = await getSingleDrink(params.id);
+  console.log(params.id);
 
   return <div>SingleDrinksPage</div>;
 };
