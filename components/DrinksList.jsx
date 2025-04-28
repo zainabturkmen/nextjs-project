@@ -1,7 +1,7 @@
 import Link from "next/link";
 const DrinksList = ({ drinks }) => {
   return (
-    <ul className="menu menu-vertical pl-0">
+    <ul className="menu menu-vertical pl-10">
       {drinks.map((drink) => {
         return (
           <li key={drink.idDrink}>
