@@ -1,7 +1,6 @@
 import Link from "next/link";
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 import drinkImage from "./drink.jpg";
-console.log(drinkImage);
 
 const getSingleDrink = async (id) => {
   const res = await fetch(`${url}${id}`);
@@ -22,7 +21,7 @@ const SingleDrinksPage = async ({ params }) => {
       <Link href="/drinks" className="btn btn-primary mt-8 mb-12">
         Back to drinks
       </Link>
-      <Image src={imgSrc} />
+      <Image src={drinkImage} className="w-48 h-48 rounded-lg" alt="drinky" />
       <h1 className="text-4xl mb-8">{title}</h1>
     </div>
   );
