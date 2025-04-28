@@ -22,7 +22,7 @@ const SingleDrinksPage = async ({ params }) => {
       <Link href="/drinks" className="btn btn-primary mt-8 mb-12">
         Back to drinks
       </Link>
-
+      <Image src={imgSrc} />
       <h1 className="text-4xl mb-8">{title}</h1>
     </div>
   );
