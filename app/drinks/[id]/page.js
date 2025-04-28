@@ -17,7 +17,7 @@ const SingleDrinksPage = async ({ params }) => {
   console.log(title, imgSrc);
 
   return (
-    <div>
+    <div className="ml-12">
       <Link href="/drinks" className="btn btn-primary mt-8 mb-12">
         Back to drinks
       </Link>
