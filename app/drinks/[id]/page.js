@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 import drinkImage from "./drink.jpg";
 
