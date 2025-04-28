@@ -1,8 +1,8 @@
 import Link from "next/link";
-const url = "www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
+const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 
 const getSingleDrink = async (id) => {
-  const response = await fetch(`${url}${id}`);
+  const res = await fetch(`${url}${id}`);
   if (!res.ok) {
     throw new Error("Faild to fetch a drink....");
   }
@@ -10,7 +10,7 @@ const getSingleDrink = async (id) => {
 
 const SingleDrinksPage = async ({ params }) => {
   const data = await getSingleDrink(params.id);
-  console.log(params.id);
+  console.log(data);
 
   return <div>SingleDrinksPage</div>;
 };
