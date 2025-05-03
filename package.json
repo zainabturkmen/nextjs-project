@@ -16,6 +16,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@types/node": "^22.15.3",
     "daisyui": "^4.12.23",
     "postcss": "^8",
     "prisma": "^6.7.0",
