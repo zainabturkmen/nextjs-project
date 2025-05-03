@@ -1,7 +1,7 @@
 import React from "react";
 
-const AuthPage = () => {
-  return <div>AuthPage</div>;
+const SignInPage = () => {
+  return <div className="text-7xl">SignInPage</div>;
 };
 
-export default AuthPage;
+export default SignInPage;
