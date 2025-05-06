@@ -18,7 +18,7 @@ const drinksPage = async () => {
   const data = await fetchDrinks();
 
   return (
-    <div clssName="">
+    <div >
       <DrinksList drinks={data.drinks} />
     </div>
   );
