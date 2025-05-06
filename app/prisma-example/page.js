@@ -1,9 +1,9 @@
-import React from 'react'
+import prisma from "@/utils/db";
 
-const prismaExample = () => {
-  return (
-    <div>prismaExample</div>
-  )
-}
 
-export default prismaExample
+
+const PrismaExample = () => {
+  return <div>PrismaExample</div>;
+};
+
+export default PrismaExample;
