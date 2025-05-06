@@ -1,5 +1,5 @@
 import prisma from "@/utils/db";
-import { Content } from "next/font/google";
+// import { Content } from "next/font/google";
 
 const PrismaHandlers = async () => {
   await prisma.task.create({
@@ -24,7 +24,7 @@ const PrismaExample = async () => {
       {tasks.map((task) => {
         return (
           <h2 key={task.id} className="text-xl py-2">
-            {task.content}
+            ✅{task.content}
           </h2>
         );
       })}
