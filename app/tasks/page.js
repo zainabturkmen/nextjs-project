@@ -1,8 +1,10 @@
-import React from 'react'
+import TaskForm from "@/components/TaskForm"
 
 const tasksPage = () => {
   return (
-    <div>tasksPage</div>
+    <div className="max-w-lg">
+      <TaskForm/>
+    </div>
   )
 }
 
