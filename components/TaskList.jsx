@@ -1,6 +1,6 @@
 import prisma from "@/utils/db";
 import DeleteForm from "./DeleteForm";
-
+import Link from "next/link";
 const TaskList = async () => {
   const tasks = await prisma.task.findMany({
     orderBy: {
