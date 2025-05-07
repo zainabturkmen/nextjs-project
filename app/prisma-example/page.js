@@ -19,7 +19,7 @@ const PrismaExample = async () => {
   const tasks = await PrismaHandlers();
 
   return (
-    <div>
+    <div className ="ml-10">
       <h1 className="text-7xl"> Prisma Example </h1>
       {tasks.map((task) => {
         return (
