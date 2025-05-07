@@ -1,4 +1,5 @@
 import prisma from "@/utils/db";
+import DeleteForm from "./DeleteForm";
 
 const TaskList = async () => {
   const tasks = await prisma.task.findMany({
@@ -31,6 +32,7 @@ const TaskList = async () => {
               >
                 Edit
               </Link>
+              <DeleteForm id={task.id} />
             </div>
           </li>
         );
