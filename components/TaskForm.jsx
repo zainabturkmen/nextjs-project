@@ -1,7 +1,9 @@
 
 const TaskForm = () => {
   return (
-    <div>TaskForm</div>
+    <form className="join w-full">
+      <input type="text" className="input input-bordered join-item"></input>
+    </form>
   )
 }
 
