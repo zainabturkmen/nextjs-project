@@ -8,6 +8,7 @@ const TaskForm = () => {
         name="content"
         required
       ></input>
+      <button></button>
     </form>
   );
 };
