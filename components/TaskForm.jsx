@@ -7,8 +7,10 @@ const TaskForm = () => {
         placeholder="type here"
         name="content"
         required
-      ></input>
-      <button></button>
+      />
+      <button type="submit" className="btn btn-primary join-item">
+        Create Task
+      </button>
     </form>
   );
 };
