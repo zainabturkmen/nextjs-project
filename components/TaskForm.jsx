@@ -1,10 +1,5 @@
-import { log } from "console";
-import { revalidatePath } from "next/cache";
 
-const createTask = async (formData) => {
-  "use server";
-  
-};
+import { createTask } from "@/utils/actions";
 
 const TaskForm = () => {
   return (
