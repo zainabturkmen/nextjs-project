@@ -28,3 +28,7 @@ export const deleteTask = async (formData) => {
   });
   revalidatePath("/tasks");
 };
+
+export const getTask = async (id) => {};
+
+export const editTask = async (formData) => {};
