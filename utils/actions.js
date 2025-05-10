@@ -11,12 +11,20 @@ export const getAllTasks = async () => {
   });
 };
 
-export const createTask = async (FormData) => {
+export const createTask = async (formData) => {
   const content = formData.get("content");
   await prisma.task.create({
     data: {
       content,
     },
   });
-  revalidatePath("/tasks");c
+  revalidatePath("/tasks");
+};
+
+export const deleteTask = async (formData) => {
+  const id = formData.get("id");
+  await prisma.task.delete({
+    where: { id },
+  });
+  revalidatePath("/tasks");
 };
