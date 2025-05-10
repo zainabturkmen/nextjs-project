@@ -1,3 +1,4 @@
+import EditForm from "@/components/EditForm";
 import { getTask } from "@/utils/actions";
 import Link from "next/link";
 
@@ -8,6 +9,7 @@ const SingleTaskPage = async ({ params }) => {
       <Link href="/tasks" className="btn btn-acent">
         Back to tasks
       </Link>
+      <EditForm />
     </div>
   );
 };
