@@ -1,5 +1,7 @@
 
-const EditForm = () => {
+const EditForm = ({task}) => {
+    console.log(task);
+    
   return (
     <div>EditForm</div>
   )

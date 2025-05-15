@@ -9,9 +9,9 @@ const SingleTaskPage = async ({ params }) => {
       <Link href="/tasks" className="btn btn-acent">
         Back to tasks
       </Link>
-      <EditForm />
+      <EditForm task= {task} />
     </div>
   );
 };
 
-export default page;
+export default SingleTaskPage ;
