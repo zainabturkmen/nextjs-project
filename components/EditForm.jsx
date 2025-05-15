@@ -7,4 +7,4 @@ const EditForm = ({task}) => {
   )
 }
 
-export default EditForm
+export default EditForm 
