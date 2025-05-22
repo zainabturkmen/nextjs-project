@@ -7,7 +7,7 @@ const EditForm = ({ task }) => {
   return (
     <form
       action={editTask}
-      className="max-w-sm  p-12 border border-base-300 rounded-lg"
+      className="max-w-sm  p-12 border border-base-300 rounded-lg ml-10"
     >
       <input type="hidden" name="id" value={id} />
       {/* content */}

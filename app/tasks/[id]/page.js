@@ -7,7 +7,7 @@ const SingleTaskPage = async ({ params }) => {
   return (
     <>
       <div className="mb-16">
-        <Link href="/tasks" className="btn btn-acent">
+        <Link href="/tasks" className="btn btn-acent ml-10">
           Back to tasks
         </Link>
       </div>
