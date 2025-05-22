@@ -11,7 +11,13 @@ const EditForm = ({ task }) => {
     >
       <input type="hidden" name="id" value={id} />
       {/* content */}
-      <input type="text" required />
+      <input
+        type="text"
+        required
+        defaultValue={content}
+        name="content"
+        className="input input-bordered w-full"
+      />
     </form>
   );
 };
