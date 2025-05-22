@@ -1,9 +1,8 @@
 "use client";
+import { useState, useTransition } from "react";
 import { createTaskCustom } from "@/utils/actions";
-import { useFormStatus, useFormState } from "react-dom";
 
-const SubmitBtn = () => {
-  const { pending } = useFormStatus();
+const SubmitBtn = ({ pending }) => {
   return (
     <button
       type="submit"
@@ -15,15 +14,23 @@ const SubmitBtn = () => {
   );
 };
 
-const initialState = {
-  message: null,
-};
-
 const TaskForm = () => {
-  const [state, formAction] = useFormState(createTaskCustom, initialState);
+  const [state, setState] = useState({ message: null });
+  const [isPending, startTransition] = useTransition();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    startTransition(async () => {
+      const result = await createTaskCustom(formData);
+      setState(result);
+      e.target.reset(); // clear form if needed
+    });
+  };
 
   return (
-    <form action={formAction}>
+    <form onSubmit={handleSubmit}>
       {state.message ? <p className="mb-2">{state.message}</p> : null}
       <div className="join w-full">
         <input
@@ -33,7 +40,7 @@ const TaskForm = () => {
           name="content"
           required
         />
-        <SubmitBtn />
+        <SubmitBtn pending={isPending} />
       </div>
     </form>
   );
