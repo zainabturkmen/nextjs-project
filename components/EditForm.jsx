@@ -19,7 +19,7 @@ const EditForm = ({ task }) => {
         className="input input-bordered w-full"
       />
       {/* completed */}
-      <div className="form-control">
+      <div className="form-control my-4">
         <label htmlForm="completed" className="label cursor-pointer">
           <span className="label-text">completed</span>
           <input
