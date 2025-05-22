@@ -18,6 +18,22 @@ const EditForm = ({ task }) => {
         name="content"
         className="input input-bordered w-full"
       />
+      {/* completed */}
+      <div className="form-control">
+        <label htmlForm="completed" className="label cursor-pointer">
+          <span className="label-text">completed</span>
+          <input
+            type="checkbox"
+            defaultChecked={completed}
+            id="completed"
+            name="completed"
+            className="checkbox checkbox-primary checkbox-sm"
+          />
+        </label>
+      </div>
+      <button type=" submit" className="btn btn-primary btn-block btn-sm">
+        Edit
+      </button>
     </form>
   );
 };
