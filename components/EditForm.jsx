@@ -1,3 +1,5 @@
+"use client"
+
 import { editTask } from "@/utils/actions";
 
 const EditForm = ({ task }) => {
