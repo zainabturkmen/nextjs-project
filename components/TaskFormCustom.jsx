@@ -23,7 +23,8 @@ const TaskForm = () => {
   const [state, formAction] = useFormState(createTaskCustom, initialState);
 
   return (
-    <form action={createTaskCustom}>
+    <form action={formAction}>
+      {state.message ? <p className="mb-2">{state.message}</p> : null}
       <div className="join w-full">
         <input
           type="text"
