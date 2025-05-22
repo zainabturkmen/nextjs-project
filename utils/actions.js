@@ -59,7 +59,7 @@ export const editTask = async (formData) => {
 export const createTaskCustom = async (prevState, formData) => {
   // await new Promise((resolve) => setTimeout(resolve, 2000));
   const content = formData.get("content");
-  const Task = z.objectb({
+  const Task = z.object({
     content: z.string().min(5),
   });
   try {
